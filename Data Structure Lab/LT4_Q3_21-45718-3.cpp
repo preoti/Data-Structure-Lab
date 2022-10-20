@@ -6,7 +6,7 @@ int main()
     cout<<"Enter 5 Elements : ";
     for(i=0; i<5; i++)
         cin>>arr[i];
-    cout<<"\nEnter Element to be Search: ";
+    cout<<"Enter Element to be Search: ";
     cin>>num;
     first = 0;
     last = 4;
@@ -17,7 +17,7 @@ int main()
             first = middle+1;
         else if(arr[middle]==num)
         {
-            cout<<"\nThe number, "<<num<<" found at Position "<<middle+1;
+            cout<<"The number "<<num<<" found at Position "<<middle+1;
             break;
         }
         else
@@ -25,7 +25,7 @@ int main()
         middle = (first+last)/2;
     }
     if(first>last)
-        cout<<"\nThe number, "<<num<<" is not found in given Array";
+        cout<<"The number "<<num<<" is not found in given Array";
     cout<<endl;
     return 0;
 }
